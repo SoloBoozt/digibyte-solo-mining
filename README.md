@@ -6,7 +6,7 @@ Solo mine DigiByte using the SHA-256d algorithm with your own full node and ckpo
 
 | Component | Description |
 |-----------|-------------|
-| **DigiByte Core** | Full node (v8.22.x) synced to mainnet |
+| **DigiByte Core** | Full node (v8.26.x) synced to mainnet |
 | **ckpool** | Solo mining pool software (runs locally) |
 | **SHA-256 ASIC miner** | Bitaxe, Antminer S9/S19, etc. |
 | **Linux machine** | Ubuntu/Debian recommended (runs 24/7) |
@@ -32,12 +32,19 @@ Solo mine DigiByte using the SHA-256d algorithm with your own full node and ckpo
 
 ### Download
 
+Get the latest stable release from the official sources:
+
+- **Official website**: https://digibyte.org
+- **GitHub releases**: https://github.com/DigiByte-Core/digibyte/releases
+
 ```bash
-# Download the latest stable release
-wget https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.2/digibyte-8.22.2-x86_64-linux-gnu.tar.gz
-tar xzf digibyte-8.22.2-x86_64-linux-gnu.tar.gz
-sudo cp digibyte-8.22.2/bin/* /usr/local/bin/
+# Example for v8.26.2 on Linux x86_64
+wget https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-8.26.2-x86_64-linux-gnu.tar.gz
+tar xzf digibyte-8.26.2-x86_64-linux-gnu.tar.gz
+sudo cp digibyte-8.26.2/bin/* /usr/local/bin/
 ```
+
+> **Always verify downloads.** Check the SHA-256 hashes on the release page and verify GPG signatures when available.
 
 ### Configure
 
