@@ -1,0 +1,23 @@
+# ckpool systemd user service
+#
+# Place this file at: ~/.config/systemd/user/ckpool.service
+# Then run:
+#   loginctl enable-linger $USER
+#   systemctl --user daemon-reload
+#   systemctl --user enable ckpool
+#   systemctl --user start ckpool
+
+[Unit]
+Description=CKPool Solo Mining - DigiByte SHA256
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/YOUR_USERNAME/ckpool/src/ckpool -c /home/YOUR_USERNAME/ckpool-solo/ckpool.conf
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/YOUR_USERNAME/ckpool-solo/logs/ckpool-stdout.log
+StandardError=append:/home/YOUR_USERNAME/ckpool-solo/logs/ckpool-stderr.log
+
+[Install]
+WantedBy=default.target
