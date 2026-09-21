@@ -38,7 +38,7 @@ Get the latest stable release from the official sources:
 - **GitHub releases**: https://github.com/DigiByte-Core/digibyte/releases
 
 ```bash
-# Example for v8.26.2 on Linux x86_64
+# Example for v9.26.5 on Linux x86_64
 wget https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.5/digibyte-9.26.5-x86_64-linux-gnu.tar.gz
 tar xzf digibyte-9.26.5-x86_64-linux-gnu.tar.gz
 sudo cp digibyte-9.26.5/bin/* /usr/local/bin/
