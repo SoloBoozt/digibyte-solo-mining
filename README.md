@@ -39,9 +39,9 @@ Get the latest stable release from the official sources:
 
 ```bash
 # Example for v8.26.2 on Linux x86_64
-wget https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-8.26.2-x86_64-linux-gnu.tar.gz
-tar xzf digibyte-8.26.2-x86_64-linux-gnu.tar.gz
-sudo cp digibyte-8.26.2/bin/* /usr/local/bin/
+wget https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.5/digibyte-9.26.5-x86_64-linux-gnu.tar.gz
+tar xzf digibyte-9.26.5-x86_64-linux-gnu.tar.gz
+sudo cp digibyte-9.26.5/bin/* /usr/local/bin/
 ```
 
 > **Always verify downloads.** Check the SHA-256 hashes on the release page and verify GPG signatures when available.
